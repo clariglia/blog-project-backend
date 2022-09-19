@@ -32,8 +32,9 @@ app.get('/api/comments', (request, response)=>{
     })
 })
 
-app.listen(3001, ()=>{
-    console.log(`Server: http://localhost:3001`)
+const PORT = process.env.PORT
+app.listen(PORT, ()=>{
+    console.log(`Server: http://localhost:${PORT}`)
 })
 
 
